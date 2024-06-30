@@ -9,7 +9,11 @@ In the heat of hating his job, he decided to change his occupation and start stu
 ## Skills
 - HTML 
 - css 
-- js (base)
+- JS (base)
+- TS
+- Figma
+- PHP (base)
+- MySQL
 
 ## Code example
 I dont have a Codewars accaunt, but I have a sample code from my last courses. It was necessary to find a number from the series and record the number of iterations:
