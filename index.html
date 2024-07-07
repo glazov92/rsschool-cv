@@ -23,5 +23,139 @@
             </nav>
         </div>
     </header>
-</body>
+    <main class="main">
+        <section class="name">
+            <div class="container">
+                <h1 class="name__title">Ilya Glazov</h1>
+                <img src="./images/photo.jpg" alt="Фото" class="name__photo">
+            </div>
+        </section>
+        <section class="Contacts">
+            <div class="container">
+                <h2 class="contacts__title">Contacts:</h2>
+                <div class="contacts__unit">
+                    <h3>Email:</h3>
+                    <p><a href="mailto:glazov92@gmail.com">glazov92@gmail.com</a></p>
+                </div>
+                <div class="contacts__unit">
+                    <h3>Tel. number:</h3>
+                    <p><a href="tel:+79059397860">+7 (905) 939-78-60</a></p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="About_me">
+            <div class="container">
+                <h2 class="about__title">About Myself</h2>
+                <p>In the heat of hating his job, he decided to change his occupation and start studying. I started with courses that were held in my city, finished, but did not develop further. I decided to start with a clean slate in RS Scool.</p>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <ul class="skills__list">
+                    <h2 class="skills__title">Skills:</h2>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS (base)</li>
+                    <li>Type Script</li>
+                    <li>PHP (base)</li>
+                    <li>MySQL</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+        </section>
+        <section class="Code">
+            <div class="container">
+                <h2 class="code__title">Code example</h2>
+                <p>I dont have a Codewars accaunt, but I have a sample code from my last courses. It was necessary to find a number from the series and record the number of iterations:</p>
+                <pre><code>
+                    const year1 = 1800;
+                    const year2 = 2020;
+                    const searchYear = 1961;
+                    
+                    if (searchYear < year1 || searchYear > year2) {
+                      
+                      console.log("Некорректный год");
+                    }
+                    
+                    let counterY = 0;
+                    let y = (year1 + year2) / 2; 
+                    y = Math.round(y); 
+                    let yOld = 1; 
+                    
+                    if (y > searchYear) {
+                      while (y > searchYear) {
+                        yOld = y; 
+                        y = (year1 + y) / 2;
+                       
+                        y = Math.round(y); 
+                        counterY++;
+                      }
+                    } else {
+                      while (y < searchYear) {
+                        yOld = y;
+                        y = (year2 + y) / 2;
+                       
+                        y = Math.round(y); 
+                        counterY++;
+                      }
+                    }
+                    
+                    let yOld2 = yOld; 
+                    
+                    while (searchYear - y !== 1 && searchYear - y !== -1) {
+                      if (y > searchYear) {
+                        while (y > searchYear) {
+                          yOld = y; 
+                          y = (yOld2 + y) / 2;
+                         
+                          y = Math.round(y); 
+                          counterY++;
+                        }
+                      } else if (y < searchYear) {
+                        while (y < searchYear) {
+                          yOld = y;
+                          y = (yOld2 + y) / 2;
+                          
+                          y = Math.round(y); 
+                          counterY++;
+                        }
+                      } else {
+                        console.log(y);
+                        break;
+                      } 
+                      yOld2 = yOld;
+                      counterY++;
+                    }
+                    
+                    if (y > searchYear) {
+                      y = y - 1;
+                    } else {
+                      y = y + 1;
+                    }
+                    
+                    console.log(y + " - год первого полета человека в космос");
+                    console.log(counterY + " Итераций");
+                </code></pre>
+            </div>
+        </section>
+        <section class="experiense">
+            <div class="container">
+                <h2 class="ex[erience__title">Experience</h2>
+                <p>No work experience</p>
+            </div>
+        </section>
+        <section class="education">
+            <div class="container">
+                <h2 class="education__title">Education</h2>
+                <p>Higher education in construction. Retraining courses in the specialty web developer at the Lobachevsky University.</p>
+            </div>
+        </section>
+        <section class="english">
+            <div class="container">
+                <h2 class="english__title">English</h2>
+                <p>My English is an entry-level.</p>
+            </div>
+        </section>
+    </main>
 </html>
