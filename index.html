@@ -53,8 +53,8 @@
         </section>
         <section class="skills">
             <div class="container">
+                <h2 class="skills__title">Skills:</h2>
                 <ul class="skills__list">
-                    <h2 class="skills__title">Skills:</h2>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JS (base)</li>
@@ -74,7 +74,7 @@
                     const year2 = 2020;
                     const searchYear = 1961;
                     
-                    if (searchYear < year1 || searchYear > year2) {
+                    if (searchYear &lt; year1 || searchYear > year2) {
                       
                       console.log("Некорректный год");
                     }
@@ -93,7 +93,7 @@
                         counterY++;
                       }
                     } else {
-                      while (y < searchYear) {
+                      while (y &lt; searchYear) {
                         yOld = y;
                         y = (year2 + y) / 2;
                        
@@ -113,8 +113,8 @@
                           y = Math.round(y); 
                           counterY++;
                         }
-                      } else if (y < searchYear) {
-                        while (y < searchYear) {
+                      } else if (y &lt; searchYear) {
+                        while (y &lt; searchYear) {
                           yOld = y;
                           y = (yOld2 + y) / 2;
                           
