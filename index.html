@@ -34,15 +34,16 @@
         <section class="Contacts">
             <div class="container">
                 <h2 class="contacts__title">Contacts:</h2>
-                <div class="contacts__unit">
-                    <h3>Email:</h3>
-                    <p><a href="mailto:glazov92@gmail.com">glazov92@gmail.com</a></p>
-                </div>
-                <div class="contacts__unit">
-                    <h3>Tel. number:</h3>
-                    <p><a href="tel:+79059397860">+7 (905) 939-78-60</a></p>
-                </div>
-                
+                <ul class="contacts__list">
+                    <li class="contacts__list__item">
+                            <h3>Email:</h3>
+                            <p><a href="mailto:glazov92@gmail.com">glazov92@gmail.com</a></p>
+                    </li>
+                    <li class="contacts__list__item">
+                            <h3>Tel. number:</h3>
+                            <p><a href="tel:+79059397860">+7 (905) 939-78-60</a></p>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="About_me">
@@ -88,7 +89,6 @@
                       while (y > searchYear) {
                         yOld = y; 
                         y = (year1 + y) / 2;
-                       
                         y = Math.round(y); 
                         counterY++;
                       }
@@ -96,7 +96,6 @@
                       while (y &lt; searchYear) {
                         yOld = y;
                         y = (year2 + y) / 2;
-                       
                         y = Math.round(y); 
                         counterY++;
                       }
@@ -109,7 +108,6 @@
                         while (y > searchYear) {
                           yOld = y; 
                           y = (yOld2 + y) / 2;
-                         
                           y = Math.round(y); 
                           counterY++;
                         }
@@ -117,7 +115,6 @@
                         while (y &lt; searchYear) {
                           yOld = y;
                           y = (yOld2 + y) / 2;
-                          
                           y = Math.round(y); 
                           counterY++;
                         }
@@ -161,7 +158,8 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <img src="./images/logo_rs.png" alt="rs" class="footer__rs_logo">
+            <a href="https://rs.school/courses/javascript-preschool-ru"><img src="./images/logo_rs.png" alt="rs" class="footer__rs_logo"></a>
+            <a href="https://github.com/glazov92">GitHub</a>
             <p>Developed by Ilya Glazov</p>
         </div>
     </footer>
